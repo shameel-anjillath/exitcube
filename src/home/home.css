@@ -1,0 +1,17 @@
+.home{
+    display: flex;
+    width: 99vw;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}

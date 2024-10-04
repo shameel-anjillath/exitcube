@@ -1,0 +1,86 @@
+/* src/ComingSoon.css */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #282c34;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .coming-soon {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+  }
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+  }
+
+  .countdown {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .time-box {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 80px;
+  }
+
+  .time-box span {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+
+  .time-box p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #aaa;
+  }
+  @media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem; /* Reduce heading size */
+    }
+
+    p {
+        font-size: 1rem; /* Reduce paragraph size */
+    }
+
+    .coming-soon{
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    .countdown {
+      display: flex;
+      justify-content: center;
+        flex-direction: row; /* Stack countdown boxes vertically */
+    }
+
+    .time-box {
+        min-width: 60px; /* Smaller minimum width */
+        padding: 15px; /* Reduce padding */
+    }
+
+    .time-box span {
+        font-size: 2rem; /* Reduce font size for countdown */
+    }
+}
